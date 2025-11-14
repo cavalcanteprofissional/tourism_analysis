@@ -10,7 +10,7 @@ Uma aplicação web interativa para análise de dados de turismo internacional n
 
 Este projeto realiza análise exploratória de dados sobre o fluxo de turistas internacionais nos 9 estados do Nordeste brasileiro, utilizando dados reais de Fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos..
 
-### 🎯 Objetivos
+## 🎯 Objetivos
 
 - Analisar a evolução temporal do turismo na região
 - Identificar os estados mais visitados
@@ -53,97 +53,133 @@ tourism_analysis/
 
 ## ⚡ Instalação e Execução
 
-### Pré-requisitos
+#### Pré-requisitos
 
 - Python 3.8 ou superior
 - Poetry instalado
 
-### 🎯 Passo a Passo
+#### 🎯 Passo a Passo
 
 1. **Clone o repositório**
+
    ```bash
    git clone <url-do-repositorio>
    cd tourism_analysis
 
 2. **Instale as dependências**
+
    ```bash
-   poetry install
    cat requirements.txt | xargs poetry add
    poetry run streamlit run src/tourism_analysis/app.py
 
 3. **Acesse no navegador**
+
    ```bash
    http://localhost:8501
 
 ## 📊 Dados e Metodologia
+
 - **Fontes de Dados**: Fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos.
-
 - **Período**: 2019-2023
-
 - **Estados**: Todos os 9 estados do Nordeste brasileiro
 
-Características dos Dados
+## Características dos Dados
+
 - **📅 Período Temporal**: 5 anos de dados mensais
-
 - **🗺️ Cobertura Geográfica**: 9 estados nordestinos
-
 - **🌍 Origem**: 10 países de 5 continentes diferentes
-
 - **✈️ Vias de Acesso**: Aérea, terrestre e marítima
-
 - **📈 Padrões Realistas**: Sazonalidade, crescimento anual, preferências regionais
 
 ## 🎨 Funcionalidades da Aplicação
+
 #### 📊 Aba "Visão Geral"
+
 - Métricas principais (total de turistas, período, estados)
-
 - Gráfico de evolução temporal
-
 - Distribuição por continentes
-
 - Vias de acesso preferenciais
 
 ### 🗺️ Aba "Análise Geográfica"
+
 - Ranking de estados por chegadas
-
 - Mapa de calor por estado e mês
-
 - Comparativo entre regiões
 
 #### 📈 Aba "Tendências Temporais"
+
 - Filtro por intervalo de anos
-
 - Análise de sazonalidade mensal
-
 - Tendências de crescimento
 
 #### 🔍 Aba "Dados Detalhados"
+
 - Tabela com todos os registros
-
 - Estatísticas descritivas
-
 - Exportação para CSV
 
 #### 🎯 Como Usar
+
 - Inicie a aplicação seguindo os passos de instalação
-
 - Escolha o tipo de dados:
-
 - ⚡ Dados Rápidos: Para teste rápido (instantâneo)
-
 - 📊 Dados Completos: Para análise detalhada (alguns segundos)
-
 - Navegue pelas abas para explorar diferentes análises
-
 - Use os filtros para personalizar a visualização
-
 - Exporte os dados se necessário
 
 ## 🔧 Desenvolvimento
+
 - Adiconar novas dependências
-```bash
-poetry add <nome-da-dependência>
+   ```bash
+   poetry add <nome-da-dependência>
 
 - Remover dependências
-```bash
-poetry remove <nome-da-dependência>
+   ```bash
+   poetry remove <nome-da-dependência>
+
+- Atualizar requirements.txt
+   ```bash
+   poetry run pip freeze > requirements.txt
+
+- Formatação de código
+   ```bash
+   poetry run black src/tourism_analysis/
+
+- Executar testes
+   ```bash
+   poetry run pytest src/tourism_analysis/
+
+## 📈 Próximas Melhorias
+
+- Integração com API real do Ministério do Turismo
+- Modelos de machine learning para previsão
+- Mapas interativos com geolocalização
+- Análise de sentimentos de reviews turísticos
+- Dashboard comparativo com outras regiões do Brasil
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Siga estes passos:
+- Fork o projeto
+- Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
+- Commit suas mudanças (git commit -m 'Add some AmazingFeature')
+- Push para a branch (git push origin feature/AmazingFeature)
+- Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
+
+## 👥 Autores
+
+Lucas Cavalcante dos Santos
+[Github](https://github.com/cavalcanteprofissional)
+[Linkedin](https://www.linkedin.com/in/cavalcante-lucas/)
+
+## 🙏 Agradecimentos
+
+Programa Residência em TIC-20 através da Universidade Estadual do Ceará (UECE)
+Ministério do Turismo do Brasil pelos dados abertos
+Comunidade Streamlit pelas excelentes ferramentas
+Comunidade Python pelo ecossistema robusto
