@@ -38,6 +38,7 @@ Este projeto realiza análise exploratória de dados sobre o fluxo de turistas i
 
 ## 📦 Estrutura do Projeto
 
+```base
 tourism_analysis/
 ├── src/tourism_analysis/
 │ ├── app.py # Aplicação principal Streamlit
@@ -48,7 +49,8 @@ tourism_analysis/
 │ │ └── charts.py # Geração de gráficos e visualizações
 │ └── init.py
 ├── pyproject.toml # Configuração do Poetry
-├── requirements.txt # Dependências (gerado automaticamente)
+├── requirements.txt # Dependências
+├── LICENSE.txt # Licensa
 └── README.md
 
 ## ⚡ Instalação e Execução
