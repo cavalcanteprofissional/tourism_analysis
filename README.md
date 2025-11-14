@@ -1,209 +1,149 @@
-🏖️ Análise de Turismo - Região Nordeste do Brasil
-https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white
-https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-https://img.shields.io/badge/Poetry-60A5FA?style=for-the-badge&logo=poetry&logoColor=white
+# 🏖️ Análise de Turismo - Região Nordeste do Brasil
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Poetry](https://img.shields.io/badge/Poetry-60A5FA?style=for-the-badge&logo=poetry&logoColor=white)
 
 Uma aplicação web interativa para análise de dados de turismo internacional na região Nordeste do Brasil, desenvolvida com Streamlit e Python.
 
-📊 Sobre o Projeto
-Este projeto realiza análise exploratória de dados sobre o fluxo de turistas internacionais nos 9 estados do Nordeste brasileiro, utilizando dados simulados que replicam padrões reais do setor turístico.
+## 📊 Sobre o Projeto
 
-🎯 Objetivos
-Analisar a evolução temporal do turismo na região
+Este projeto realiza análise exploratória de dados sobre o fluxo de turistas internacionais nos 9 estados do Nordeste brasileiro, utilizando dados reais de Fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos..
 
-Identificar os estados mais visitados
+### 🎯 Objetivos
 
-Mapear os principais países de origem dos turistas
+- Analisar a evolução temporal do turismo na região
+- Identificar os estados mais visitados
+- Mapear os principais países de origem dos turistas
+- Analisar sazonalidade e tendências
+- Identificar vias de acesso preferenciais
 
-Analisar sazonalidade e tendências
+## 🚀 Funcionalidades
 
-Identificar vias de acesso preferenciais
+- **📈 Dashboard Interativo**: Visualizações dinâmicas e interativas
+- **🗺️ Análise Geográfica**: Distribuição por estados do Nordeste
+- **📊 Gráficos Diversos**: Linhas, barras, pizza e heatmaps
+- **⚡ Dados Realistas**: Dados simulados com padrões reais
+- **📱 Interface Responsiva**: Design adaptável para diferentes dispositivos
+- **📥 Exportação de Dados**: Download dos dados em CSV
 
-🚀 Funcionalidades
-📈 Dashboard Interativo: Visualizações dinâmicas e interativas
+## 🛠️ Tecnologias Utilizadas
 
-🗺️ Análise Geográfica: Distribuição por estados do Nordeste
+- **Python 3.8+**
+- **Streamlit** - Framework para aplicações web
+- **Pandas** - Manipulação e análise de dados
+- **Plotly** - Visualizações interativas
+- **NumPy** - Computação numérica
+- **Poetry** - Gerenciamento de dependências
 
-📊 Gráficos Diversos: Linhas, barras, pizza e heatmaps
+## 📦 Estrutura do Projeto
 
-⚡ Dados Realistas: Dados simulados com padrões reais
-
-📱 Interface Responsiva: Design adaptável para diferentes dispositivos
-
-📥 Exportação de Dados: Download dos dados em CSV
-
-🛠️ Tecnologias Utilizadas
-Python 3.8+
-
-Streamlit - Framework para aplicações web
-
-Pandas - Manipulação e análise de dados
-
-Plotly - Visualizações interativas
-
-NumPy - Computação numérica
-
-Poetry - Gerenciamento de dependências
-
-📦 Estrutura do Projeto
-text
 tourism_analysis/
 ├── src/tourism_analysis/
-│   ├── app.py                 # Aplicação principal Streamlit
-│   ├── data/
-│   │   ├── collector.py       # Coleta e geração de dados
-│   │   └── processor.py       # Processamento e limpeza de dados
-│   ├── visualization/
-│   │   └── charts.py          # Geração de gráficos e visualizações
-│   └── __init__.py
-├── pyproject.toml            # Configuração do Poetry
-├── requirements.txt          # Dependências (gerado automaticamente)
+│ ├── app.py # Aplicação principal Streamlit
+│ ├── data/
+│ │ ├── collector.py # Coleta e geração de dados
+│ │ └── processor.py # Processamento e limpeza de dados
+│ ├── visualization/
+│ │ └── charts.py # Geração de gráficos e visualizações
+│ └── init.py
+├── pyproject.toml # Configuração do Poetry
+├── requirements.txt # Dependências (gerado automaticamente)
 └── README.md
-⚡ Instalação e Execução
-Pré-requisitos
-Python 3.8 ou superior
 
-Poetry instalado
+## ⚡ Instalação e Execução
 
-🎯 Passo a Passo
-Clone o repositório
+### Pré-requisitos
 
-bash
-git clone <url-do-repositorio>
-cd tourism_analysis
-Instale as dependências com Poetry
+- Python 3.8 ou superior
+- Poetry instalado
 
-bash
-poetry install
-Ative o ambiente virtual
+### 🎯 Passo a Passo
 
-bash
-poetry shell
-Execute a aplicação
+1. **Clone o repositório**
+   ```bash
+   git clone <url-do-repositorio>
+   cd tourism_analysis
 
-bash
-poetry run streamlit run src/tourism_analysis/app.py
-Acesse no navegador
+2. **Instale as dependências**
+   ```bash
+   poetry install
+   cat requirements.txt | xargs poetry add
+   poetry run streamlit run src/tourism_analysis/app.py
 
-text
-http://localhost:8501
-🚀 Execução Rápida
-bash
-# Em uma linha só:
-poetry install && poetry run streamlit run src/tourism_analysis/app.py
-📊 Dados e Metodologia
-Fontes de Dados
-Dados Simulados: Gerados com padrões realistas baseados em estatísticas do turismo
+3. **Acesse no navegador**
+   ```bash
+   http://localhost:8501
 
-Período: 2019-2023
+## 📊 Dados e Metodologia
+- **Fontes de Dados**: Fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos.
 
-Estados: Todos os 9 estados do Nordeste brasileiro
+- **Período**: 2019-2023
+
+- **Estados**: Todos os 9 estados do Nordeste brasileiro
 
 Características dos Dados
-📅 Período Temporal: 5 anos de dados mensais
+- **📅 Período Temporal**: 5 anos de dados mensais
 
-🗺️ Cobertura Geográfica: 9 estados nordestinos
+- **🗺️ Cobertura Geográfica**: 9 estados nordestinos
 
-🌍 Origem: 10 países de 5 continentes diferentes
+- **🌍 Origem**: 10 países de 5 continentes diferentes
 
-✈️ Vias de Acesso: Aérea, terrestre e marítima
+- **✈️ Vias de Acesso**: Aérea, terrestre e marítima
 
-📈 Padrões Realistas: Sazonalidade, crescimento anual, preferências regionais
+- **📈 Padrões Realistas**: Sazonalidade, crescimento anual, preferências regionais
 
-🎨 Funcionalidades da Aplicação
-📊 Aba "Visão Geral"
-Métricas principais (total de turistas, período, estados)
+## 🎨 Funcionalidades da Aplicação
+#### 📊 Aba "Visão Geral"
+- Métricas principais (total de turistas, período, estados)
 
-Gráfico de evolução temporal
+- Gráfico de evolução temporal
 
-Distribuição por continentes
+- Distribuição por continentes
 
-Vias de acesso preferenciais
+- Vias de acesso preferenciais
 
-🗺️ Aba "Análise Geográfica"
-Ranking de estados por chegadas
+### 🗺️ Aba "Análise Geográfica"
+- Ranking de estados por chegadas
 
-Mapa de calor por estado e mês
+- Mapa de calor por estado e mês
 
-Comparativo entre regiões
+- Comparativo entre regiões
 
-📈 Aba "Tendências Temporais"
-Filtro por intervalo de anos
+#### 📈 Aba "Tendências Temporais"
+- Filtro por intervalo de anos
 
-Análise de sazonalidade mensal
+- Análise de sazonalidade mensal
 
-Tendências de crescimento
+- Tendências de crescimento
 
-🔍 Aba "Dados Detalhados"
-Tabela com todos os registros
+#### 🔍 Aba "Dados Detalhados"
+- Tabela com todos os registros
 
-Estatísticas descritivas
+- Estatísticas descritivas
 
-Exportação para CSV
+- Exportação para CSV
 
-🎯 Como Usar
-Inicie a aplicação seguindo os passos de instalação
+#### 🎯 Como Usar
+- Inicie a aplicação seguindo os passos de instalação
 
-Escolha o tipo de dados:
+- Escolha o tipo de dados:
 
-⚡ Dados Rápidos: Para teste rápido (instantâneo)
+- ⚡ Dados Rápidos: Para teste rápido (instantâneo)
 
-📊 Dados Completos: Para análise detalhada (alguns segundos)
+- 📊 Dados Completos: Para análise detalhada (alguns segundos)
 
-Navegue pelas abas para explorar diferentes análises
+- Navegue pelas abas para explorar diferentes análises
 
-Use os filtros para personalizar a visualização
+- Use os filtros para personalizar a visualização
 
-Exporte os dados se necessário
+- Exporte os dados se necessário
 
-🔧 Desenvolvimento
-Adicionar novas dependências
-bash
-poetry add nome-do-pacote
-Dependências de desenvolvimento
-bash
-poetry add --group dev pytest black flake8
-Executar testes
-bash
-poetry run pytest
-Formatação de código
-bash
-poetry run black src/
-📈 Próximas Melhorias
-Integração com API real do Ministério do Turismo
+## 🔧 Desenvolvimento
+- Adiconar novas dependências
+```bash
+poetry add <nome-da-dependência>
 
-Modelos de machine learning para previsão
-
-Mapas interativos com geolocalização
-
-Análise de sentimentos de reviews turísticos
-
-Dashboard comparativo com outras regiões do Brasil
-
-🤝 Contribuição
-Contribuições são bem-vindas! Siga estes passos:
-
-Fork o projeto
-
-Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
-
-Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-
-Push para a branch (git push origin feature/AmazingFeature)
-
-Abra um Pull Request
-
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
-
-👥 Autores
-Seu Nome - seu-github
-
-🙏 Agradecimentos
-Ministério do Turismo do Brasil pelos dados abertos
-
-Comunidade Streamlit pelas excelentes ferramentas
-
-Comunidade Python pelo ecossistema robusto
-
-Desenvolvido com ❤️ para análise de dados de turismo no Nordeste brasileiro
+- Remover dependências
+```bash
+poetry remove <nome-da-dependência>
