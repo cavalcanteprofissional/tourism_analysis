@@ -8,7 +8,7 @@ Uma aplicação web interativa para análise de dados de turismo internacional n
 
 ## 📊 Sobre o Projeto
 
-Este projeto realiza análise exploratória de dados sobre o fluxo de turistas internacionais nos 9 estados do Nordeste brasileiro, utilizando dados reais de Fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos..
+Este projeto realiza análise exploratória de dados sobre o fluxo de turistas internacionais nos 9 estados do Nordeste brasileiro, utilizando dados reais de fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos.
 
 ## 🎯 Objetivos
 
@@ -38,34 +38,33 @@ Este projeto realiza análise exploratória de dados sobre o fluxo de turistas i
 
 ## 📦 Estrutura do Projeto
 
-   ```base
-   tourism_analysis/
-   ├── src/tourism_analysis/
-   │ ├── app.py # Aplicação principal Streamlit
-   │ ├── data/
-   │ │ ├── collector.py # Coleta e geração de dados
-   │ │ └── processor.py # Processamento e limpeza de dados
-   │ ├── visualization/
-   │ │ └── charts.py # Geração de gráficos e visualizações
-   │ └── init.py
-   ├── pyproject.toml # Configuração do Poetry
-   ├── requirements.txt # Dependências
-   ├── LICENSE.txt # Licensa
-   └── README.md
+tourism_analysis/
+├── src/tourism_analysis/
+│ ├── app.py # Aplicação principal Streamlit
+│ ├── data/
+│ │ ├── collector.py # Coleta e geração de dados
+│ │ └── processor.py # Processamento e limpeza de dados
+│ ├── visualization/
+│ │ └── charts.py # Geração de gráficos e visualizações
+│ └── init.py
+├── pyproject.toml # Configuração do Poetry
+├── requirements.txt # Dependências
+├── LICENSE.txt # Licensa
+└── README.md
 
 ## ⚡ Instalação e Execução
 
-#### Pré-requisitos
+### Pré-requisitos
 
 - Python 3.8 ou superior
-- Poetry instalado
+- Poetry 2.2.1 ou superior
 
-#### 🎯 Passo a Passo
+### 🎯 Passo a Passo
 
 1. **Clone o repositório**
 
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/cavalcanteprofissional/tourism_analysis.git
    cd tourism_analysis
 
 2. **Instale as dependências**
@@ -74,19 +73,16 @@ Este projeto realiza análise exploratória de dados sobre o fluxo de turistas i
    cat requirements.txt | xargs poetry add
    poetry run streamlit run src/tourism_analysis/app.py
 
-3. **Acesse no navegador**
+3. **Acesse no navegador (caso não abra automaticamente)**
 
    ```bash
    http://localhost:8501
 
 ## 📊 Dados e Metodologia
 
-- **Fontes de Dados**: Fontes confiáveis de dados sobre turismo, como dados do IBGE, secretarias de turismo estaduais, e plataformas de dados abertos.
+- **Fontes de Dados**: Plano de Dados Abertos do Ministério do Turismo da República Federativa do Brasil. https://dados.turismo.gov.br/dataset/chegada-de-turistas-internacionais 
 - **Período**: 2019-2023
-- **Estados**: Todos os 9 estados do Nordeste brasileiro
-
-## Características dos Dados
-
+- **Regiões**: Todos os 9 estados do Nordeste brasileiro
 - **📅 Período Temporal**: 5 anos de dados mensais
 - **🗺️ Cobertura Geográfica**: 9 estados nordestinos
 - **🌍 Origem**: 10 países de 5 continentes diferentes
@@ -95,7 +91,7 @@ Este projeto realiza análise exploratória de dados sobre o fluxo de turistas i
 
 ## 🎨 Funcionalidades da Aplicação
 
-#### 📊 Aba "Visão Geral"
+### 📊 Aba "Visão Geral"
 
 - Métricas principais (total de turistas, período, estados)
 - Gráfico de evolução temporal
@@ -108,13 +104,13 @@ Este projeto realiza análise exploratória de dados sobre o fluxo de turistas i
 - Mapa de calor por estado e mês
 - Comparativo entre regiões
 
-#### 📈 Aba "Tendências Temporais"
+### 📈 Aba "Tendências Temporais"
 
 - Filtro por intervalo de anos
 - Análise de sazonalidade mensal
 - Tendências de crescimento
 
-#### 🔍 Aba "Dados Detalhados"
+### 🔍 Aba "Dados Detalhados"
 
 - Tabela com todos os registros
 - Estatísticas descritivas
